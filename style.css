@@ -1,0 +1,31 @@
+body {
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background: conic-gradient(from 135deg at 50% 50%, #ffccec 0%, #ff9c85 25%, #ffcb8f 50%, #9594ff 75%, #ffccec 100%);
+}
+
+button {
+  font-family: "Rubik", sans-serif;
+}
+
+.media::before {
+  content: "";
+  width: 2px;
+  height: auto;
+  background-color: #c7c7c7;
+  position: relative;
+  left: 27px;
+  z-index: 0;
+}
+
+.media img {
+  box-shadow: 0 0 0 12px white;
+}
+
+section > .media:not(:first-of-type) {
+  margin-top: 4em !important;
+}
